@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+#barraNavegacion{
+    font-family: 'Nunito', sans-serif;
+    background-color:#92a3f8;
+    color: white;
+}
+
+#contenedor{
+    background-color: #c0bdff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card img, video {
+    height: 400px;
+	object-fit: cover;
+}
+
+
+.card a {
+    background-color: #92a3f8;
+    border-radius: 18px;
+    border: 1 solid #92a3f8;
+    color: white;
+}
+
+#btnModal, #btnGuardar, #btnSave {
+	background-color: #92a3f8;
+    border-radius: 18px;
+    border: 1 solid #92a3f8;
+    color: white;
+}
+
+#btnCerrar {
+	border-radius: 18px;
+}
+
+.card a:hover{
+    background: #588eec;
+	font-weight:bold;
+    color: white;
+}
+
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#92a3f8;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#588eec;
+}
+
+.paginacion ul li .active {
+	background:#588eec;
+	font-weight:bold;
+}
+
+#cardsPets {
+background-color: #e7daff;
+}
+
+#redesSociales ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+#redesSociales img{
+    width: 30px;
+}
+
+#cardContacto {
+	margin: 35px 60px;
+}
+

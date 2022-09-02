@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="/img/slider-perro-gato.png"/>
+  <title>Mundo mascotas</title>
+  <!-- Estilos css -->
+  <link rel="stylesheet" href="/css/estilos.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="contenedor">
+  <header id="header"></header>
+  <main >
+    <div class="container-fluid">
+      <div class="card mt-3">
+        <div class="card-header">
+          <div class="d-flex justify-content-between">
+            <h1 class="h4">Lista de mascotas en adopción</h1>
+            <button type="button" class="btn" id="btnModal" data-bs-toggle="modal" data-bs-target="#formAdopcion">
+              Formulario de adopción
+            </button>                      
+          </div>
+        </div>
+        <div class="card-body" id="cardsPets">
+          <div class="row mt-3">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <div id="carruselMayli" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselMayli" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselMayli" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselMayli" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carruselMayli" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/img/mayli.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/maylidos.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/maylitres.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/maylicuatro.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselMayli" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselMayli" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-header">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      Maipú, Chile
+                    </div>
+                    <div>
+                      03-08-2022
+                    </div>
+                  </div>
+                </div>              
+                <div class="card-body">
+                  <h5 class="card-title">Mayli</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Perrita hembra</h6>
+                  <p class="card-text">Mayli, 2 años, es pinche con salchicha, es de color negro con amarillo, tienes los ojos negros y pesa 3 kilos.</p>
+                  <a href="#" class="btn">Más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <div id="carruselJojo" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselJojo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselJojo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselJojo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carruselJojo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/img/jojoJose.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/jojoJosedos.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/jojoJosetres.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/jojojosecuatro.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselJojo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselJojo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-header">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      La Reina, Chile
+                    </div>
+                    <div>
+                      30-07-2022
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Joso José</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Perrito macho</h6>
+                  <p class="card-text">Joso tiene 4 años, su pelo es de color morrón claro, sus ojos son de color marrón, tiene patas cortas.</p>
+                  <a href="#" class="btn">Más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <div id="carruselBenito" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselBenito" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carruselBenito" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carruselBenito" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/img/benito.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/benitodos.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/benitotres.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carruselBenito" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carruselBenito" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <div class="card-header">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      Santiago, Chile
+                    </div>
+                    <div>
+                      29-07-2022
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Benito</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Gatito macho</h6>
+                  <p class="card-text">Benito, seis meses, muy travieso, amoroso, fiel y le gusta dormir en el cuello</p>
+                  <a href="#" class="btn">Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="paginacion">
+      <ul>
+        <li><a href="index.html">1</a></li>
+        <li><a href="mascotas2.html">2</a></li>
+        <li><a href="mascotas3.html">3</a></li>
+        <!-- <li><a href="pagina4.html">4</a></li>
+        <li><a href="pagina5.html">5</a></li> -->
+      </ul>
+    </div>
+  </main>
+  <hr>
+  <footer id="footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="/js/app.js"></script>
+  <!-- Modal -->
+  <div class="modal fade" id="formAdopcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulario de adopción</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="apellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" name="apellidos">
+            </div>
+            <div class="mb-3">
+              <label for="edad" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="edad" name="edad">
+            </div>
+            <div class="mb-3">
+              <label for="nombreMascota" class="form-label">Nombre de la mascota</label>
+              <input type="text" class="form-control" id="nombreMascota" name="nombreMascota">
+            </div>
+            <div class="mb-3">
+              <label for="categoriaMascota" class="form-label">Categoría</label>
+              <select name="categoriaMascota" id="categoriaMascota" class="form-select">
+                <option value="">--Seleccione una categoría--</option>
+                <option value="1">Gato</option>
+                <option value="2">Perro</option>
+                <option value="3">Hamnsters</option>
+              </select>
+            </div>
+            <div class="mb-1">
+              <label class="form-label">Seleccione su sexo</label>
+            </div>
+            <div class="d-flex">
+              <div class="form-check" style="margin-right: 10px;">
+                <input class="form-check-input" type="radio" name="macho" id="macho">
+                <label class="form-check-label" for="macho">
+                  Macho
+                </label>
+              </div>
+              <div class="form-check ml-3">
+                <input class="form-check-input" type="radio" name="hembra" id="hembra">
+                <label class="form-check-label" for="hembra">
+                  Hembra
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="descripcion" class="form-label">Descripción</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+              <span class="small">
+                Breve descripción del por qué deberíamos elegirlo como nuevo hogar de la mascota
+              </span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCerrar">Cerrar</button>
+              <button type="button" class="btn" id="btnGuardar">Guardar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
