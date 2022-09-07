@@ -29,18 +29,21 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <form action="" method="POST" role="form">
+                            <form action="" method="POST" id="formContacto">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="mb-3">
                                             <label for="nombres" class="form-label">Nombres</label>
                                             <input type="text" name="nombres" id="nombres" class="form-control" required>
+                                            <span class="small" id="alertaNombres" style="display: none;"></span>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="mb-3">
                                             <label for="apellidos" class="form-label">Apellidos</label>
                                             <input type="text" name="apellidos" id="apellidos" class="form-control" required>
+                                            <span class="small" id="alertaApellidos" style="display: none;"></span>
+
                                         </div>
                                     </div>
                                 </div>
@@ -49,12 +52,14 @@
                                         <div class="mb-3">
                                             <label for="edad" class="form-label">Edad</label>
                                             <input type="number" name="edad" id="edad" class="form-control" required>
+                                            <span class="small" id="alertaEdad" style="display: none;"></span>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="mb-3">
                                             <label for="correo" class="form-label">Correo electrónico</label>
                                             <input type="email" class="form-control" name="correo" id="correo" placeholder="name@example.com">
+                                            <span class="small" id="alertaCorreo" style="display: none;"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -70,6 +75,7 @@
                                             <option value="3">Prefiero no decirlo</option>
                                         </select>
                                       </div>
+                                      <span class="small" id="alertaSexo" style="display: none;"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="motivo" class="form-label">Motivo</label>
@@ -77,7 +83,7 @@
                                     <span>Breve descripción del motivo por el cual decide contactarnos, no mayor a 150 carácteres</span>
                                 </div>
                                 <div class="d-flex justify-content-end mt-4">
-                                    <button id="btnSave" type="button" class="btn">Enviar</button>
+                                    <button id="btnSave" type="submit" class="btn">Enviar</button>
                                 </div>
                             </form>
                         </div>
